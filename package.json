@@ -1,0 +1,12 @@
+{
+  "name": "js-octokit",
+  "version": "0.0.1",
+  "main": "src/githubCli.js",
+  "scripts": {
+    "start": "node src/githubCli.js"
+  },
+  "author": "AoifeKettle",
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  }
+}
