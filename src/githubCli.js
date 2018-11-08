@@ -18,6 +18,10 @@ githubCliDotCom.getData({path:`/users/${handle}`})
     console.log(response.data);
   });
 
+  githubCliDotCom.getData({path:`/users/${handle}/repos`})
+    .then(response => {
+      console.log(response.data);
+    });
 // fetchUserRepositories({handle})
 //   .then(response => {
 //     console.log(response.data);
