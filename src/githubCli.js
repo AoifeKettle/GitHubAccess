@@ -24,6 +24,8 @@ else{
 //   });
 var count = 0;
 var owner = "MartaL0b0";
+//const fs = require('fs');
+var fs = require("fs");
 
 
 var repository = "EBII1819--Chatbot_Room_Booking"
@@ -37,35 +39,60 @@ githubCliDotCom.getData({path:`/repos/${owner}/${repository}/commits`})
           return;
       };
       if (response.data != '') { // Check that the body isn't empty
-                    //console.log(response.data); // Print the body to check if it's actually a valid JSON
                     for(var i = 0; i < (response.data).length; i++){
-                   var date = (response.data)[i].commit.author.date;
-                   var author = (response.data)[i].commit.author.name;
-                   count ++;
+
+                   var data = (response.data)[i].commit.author;
+
+                   fs.appendFile("data.json" , JSON.stringify(data)),
+                   (err) => {
+                       if (err) {
+                           console.error(err);
+                           return;
+                       };
+                     }
+                //   console.log(date); // Print the body to check if it's actually a valid JSON
+                   console.log(data); // Print the body to check if it's actually a valid JSON
 
                 }
                 } else {
                     console.log('Body is empty');
                 }
-                //console.log(times);
-                //console.log(authors);
-      // var newData=JSON.parse(response.data).name;
-      // console.log(newData);
-    //  console.log(response.data);
+
       console.log("File has been created");
 
   });
 
   });
 
-  var sinTimes = 0;
 
 
-var fs = require("fs");
-var fileContent = "hello";
+githubCliDotCom.getData({path:`/repos/${owner}/${repository}/branches`})
+.then(response => {
+
+      if (response.data != '') { // Check that the body isn't empty
 
 
+                   fs.appendFile("branches.json" , JSON.stringify(response.data)),
+                   (err) => {
+                       if (err) {
+                           console.error(err);
+                           return;
+                       };
+                     }
+                //   console.log(date); // Print the body to check if it's actually a valid JSON
+                   console.log(response.data); // Print the body to check if it's actually a valid JSON
+
+                }
+                 else {
+                    console.log('Body is empty');
+                }
+
+      console.log("File has been created");
+
+
+});
 }
+
 
 
       //res.statusCode = 200;
