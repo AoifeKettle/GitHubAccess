@@ -3,8 +3,8 @@
 <head>
     <title>Analysis</title>
     <meta charset="utf-8" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
 </head>
 <meta charset="utf-8">
@@ -60,6 +60,13 @@ article2 {
     background-color: #FFFFFF;
     height: 300px; /* only for demonstration, should be removed */
 }
+article3 {
+    float: left;
+    padding: 15px;
+    width: 70%;
+    background-color: #FFFFFF;
+    height: 100px; /* only for demonstration, should be removed */
+}
 
 /* Clear floats after the columns */
 section:after {
@@ -111,16 +118,16 @@ footer {
 </p>
 </article1>
 <h1>Comparison of commit times to estimated gantt predictions</h1>
-<article2>
+<article3>
   <p>
     I would like to review the commit history and compare it to our
     original estimates and gantt charts to see if we kept to our process plan.
    this graph compares the number of commits per day to create a line graph that
    follows are progress over the course of the semester.
    </p>
-</article2>
+</article3>
 <div>
-<img src="img.ganttchart.jpg" alt="Planned gantt chart">
+<img src="http://localhost:3000/GitHubAccess/img/ganttchart.JPEG" alt="Planned gantt chart">
 </div>
 </section>
 
@@ -141,7 +148,6 @@ footer {
 
   	myData.x = 'x';
   	myData.xFormat = "%Y-%m-%d";
-  	//myData.type = 'bar';
   	myX = ["2018-11-27", "2018-11-23",
         "2018-11-16",  "2018-11-13" ,
         "2018-11-06" ,"2018-11-02"  ,"2018-10-19", "2018-10-17"  , "2018-10-16"];
@@ -203,12 +209,12 @@ footer {
    </p>
  </article2>
   </section>
-  <footer> test </footer>
+  <footer> Times of commits, over 24hrs </footer>
 </body>
 </html>
 
 <body>
-  <div id='times'</div>
+  <div id='times'></div>
 
     <script>
 
@@ -222,15 +228,17 @@ footer {
         "2018-11-16",  "2018-11-13" ,
         "2018-11-06" ,"2018-11-02"  ,"2018-10-19",
          "2018-10-17"  , "2018-10-16"];
-    myY = [19, 12 ,09  , 14, 11, 7 ,3,10,9];
+    myY = [ 19, 12 ,09  , 14, 11, 7 ,3,10,9, 0, 24];
     myX.splice(0, 0, 'x');
     myY.splice(0, 0, 'y');
     myData.columns = [];
     myData.columns.push(myX);
     myData.columns.push(myY);
+    d3.json("data.json", function(data){
     var chart = c3.generate({
       bindto: elementID,
       data: myData,
+
       size: {
         height: 400,
         width: 1000,
@@ -244,6 +252,7 @@ footer {
       },
       axis: {
         x: {
+          label: 'time of commit'
           type: 'timeseries',
           tick: {
                   format: "%b-%d"
@@ -254,6 +263,8 @@ footer {
 
 
     })
+  });
+
 
 
 
@@ -279,24 +290,31 @@ footer {
    </p>
  </article2>
   </section>
-  <footer> test </footer>
 </body>
 </html>
 <body>
   <div id="chart"></div>
-
-    <script>
+<script>
 var chart = c3.generate({
     bindto: '#chart',
     data: {
       columns: [
-        ['Sinead', 0, 9, 0],
-        ['Marta',11,0,0],
-        ['Joe', 0,0,8]
+        ['Sinead', 9],
+        ['Marta',11],
+        ['Joe',8]
       ],
       type: 'bar'
-
-
+    },
+    size: {
+      height: 400,
+      width: 600,
+    },
+    bar: {
+      width: {
+        ratio: 0.8 // this makes bar width 50% of length between ticks
+      }
+      // or
+      //width: 100 // this makes bar width 100px
     },
     axis: {
       x: {
@@ -309,5 +327,32 @@ var chart = c3.generate({
 });
 </script>
 
+</body>
+</html>
+
+
+<html>
+<body>
+
+<section>
+  <article2>
+    <h1>Unused Code</h1>
+    <p>During the process of developing our chatbot, we changed platforms
+      as our original choice of chatbot framework proved unsuitable.
+      Due to this, we had a body of work around the original framework
+      that was unused. The unmerged branches of the repository are the leftover
+      coding that we did not ultimately use.
+
+ </p>
+ <p>
+   The branches that we did not merge back to the original repo are, Database,database and website.
+ </p>
+</article2>
+</section>
+
+<script>
+
+//JSON.parse("branches.json")
+</script>
 </body>
 </html>
