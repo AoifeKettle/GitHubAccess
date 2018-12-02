@@ -11,6 +11,7 @@ The first thing I aimed to measure was our progress relative to the gantt chart 
 To do this I created a line graph of the commits during the time period and compared this to the flow of work we had planned in our 
 gantt chart.
 
+
 Section 2
 
 I was also curious to view the times that we had been committing to the repo, whether we had been working late to meet deadlines, or 
@@ -28,3 +29,5 @@ Section 4
 Despite the success of this project, we did have a rough start and had to change our approah part way through the process, this led to 
 some of our work going to waste. The graph below measures the number of files committed that were not used in the final project, they
 are contained in branches that were never merged back into the master.
+
+Using the Api I found 3 branches of work that were not merged back into the database.
