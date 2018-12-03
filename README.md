@@ -11,9 +11,9 @@ The first thing I aimed to measure was our progress relative to the Gantt chart 
 To do this I created a line graph of the commits during the time period and compared this to the flow of work we had planned in our
 Gantt chart.
 
-![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/Screenshot1.png)
+![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/Capture1.JPG)
 
-![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/ganttchart.JPEG)
+![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/gantt.JPG)
 
 Section 2
 
