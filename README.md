@@ -1,10 +1,12 @@
 # GitHubAccess
 
 A social graph visualisation of a repository using the GitHub API and c3.js library.
-I used the api to interrogate the repository for information on user, commit times and date, and the remaining branches (this part involved manipulation of the javascript api library used). The json data was converted into usable format and constructed into the graphs shown below. I used a javascript sever to locally host the project. Screenshots of this have been included below, with a brief desciption of the analysis.
+I used the api to interrogate the repository for information on users, commit times and date, and the remaining branches (this part involved manipulation of the javascript api library used). The json data was converted into usable format and constructed into the graphs shown below. I used a javascript sever to locally host the project. Screenshots of this have been included below, with a brief desciption of the analysis.
+
 
 My project focuses on a repo of a group project that I completed as part of an E-Business module.
-I aimed to assess the accuracy of our process estimation, and the work patterns of group members.
+It was a successful project and so I aimed to assess the accuracy of our process estimation, and the
+work patterns of group members to better understand how we achieved our end result. 
 
 Section 1
 The first thing I aimed to measure was our progress relative to the Gantt chart the we prepared as part of our interim report.
@@ -40,4 +42,5 @@ Despite the success of this project, we did have a rough start and had to change
 some of our work going to waste. The graph below measures the number of files committed that were not used in the final project, they
 are contained in branches that were never merged back into the master.
 
-Using the api I found 3 branches of work that were not merged back into the database.
+Using the api I found 3 branches of work that were not merged back into the database. These were, the webiste website branch and two versions of a database branch. These show a large amount of wasted code that is unfortunate, however the steps to  develop these did add
+to our learning.
