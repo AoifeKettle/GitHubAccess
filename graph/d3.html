@@ -230,7 +230,7 @@ footer {
          "2018-10-17"  , "2018-10-16"];
     myY = [ 19, 12 ,09  , 14, 11, 7 ,3,10,9, 0, 24];
     myX.splice(0, 0, 'x');
-    myY.splice(0, 0, 'y');
+    myY.splice(0, 0, 'times of commit');
     myData.columns = [];
     myData.columns.push(myX);
     myData.columns.push(myY);
@@ -252,7 +252,7 @@ footer {
       },
       axis: {
         x: {
-          label: 'time of commit'
+          label: 'time of commit',
           type: 'timeseries',
           tick: {
                   format: "%b-%d"
