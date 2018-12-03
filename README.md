@@ -1,6 +1,7 @@
 # GitHubAccess
 
 A social graph visualisation of a repository using the GitHub API and c3.js library.
+I used the api to interrogate the repository for information on user, commit times and date, and the remaining branches (this part involved manipulation of the javascript api library used). The json data was converted into usable format and constructed into the graphs shown below. I used a javascript sever to locally host the project. Screenshots of this have been included below, with a brief desciption of the analysis.
 
 My project focuses on a repo of a group project that I completed as part of an E-Business module.
 I aimed to assess the accuracy of our process estimation, and the work patterns of group members.
@@ -15,11 +16,15 @@ Gantt chart.
 
 ![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/gantt.JPG)
 
+The graph comparisons show that overall, we did a good job of keeping to our estimations. There is a peak of commits towards the end 
+of our project that can be attributed to small changes and bug fixes that we were making.
+
 Section 2
 
 I was also curious to view the times that we had been committing to the repo, whether we had been working late to meet deadlines, or
 during group meetings.
 ![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/capture2.JPG)
+
 
 Section 3
 
