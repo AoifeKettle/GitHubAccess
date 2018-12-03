@@ -12,13 +12,14 @@ To do this I created a line graph of the commits during the time period and comp
 Gantt chart.
 
 ![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/Screenshot1.png)
+
 ![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/ganttchart.JPEG)
 
 Section 2
 
 I was also curious to view the times that we had been committing to the repo, whether we had been working late to meet deadlines, or
 during group meetings.
-![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/capture2.JPEG)
+![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/capture2.JPG)
 
 Section 3
 
@@ -26,7 +27,7 @@ People work in different ways and some of the engineering process required us to
 When doing this we worked according to our own habits and schedules. The bar chart below shows the average time that each member made
 commits, it shows that Marta likes to work throughout the college day, while Sinead favoured the mornings and Joe late nights.
 
-![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/Capture3.JPEG)
+![alt text](https://raw.githubusercontent.com/AoifeKettle/GitHubAccess/master/Capture3.JPG)
 
 Section 4
 
